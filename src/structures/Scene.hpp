@@ -1,22 +1,27 @@
+#pragma once
+
 #include <vector>
 #include <cstdint>
 #include <string>
 #include <stack>
 #include <memory>
 
+#include <raylib.h>
+
 namespace Game
 {
     class Scene
     {
-        static std::stack<std::unique_ptr<Scene>> modeStack;
-        
+        static std::stack<std::unique_ptr<Scene>> SceneStack;
+
+        Color Background = {0,0,0,255};
 
         public:
             static bool GameHasToExit;
             static void ExitGame();
             
 
-            static void SetEnterGameMode(std::unique_ptr<Scene> mode);
+            static void SetEnterScene(std::unique_ptr<Scene> Scene);
 
 
 
@@ -27,11 +32,11 @@ namespace Game
             virtual void Start(){}
             virtual void End(){}
 
-            void PushMode(std::unique_ptr<Scene> mode);
-            void ExitMode();
+            void PushScene(std::unique_ptr<Scene> Scene);
+            void ExitScene();
 
-            static void UpdateCurrentMode();
-            static void RenderCurrentMode();
+            static void UpdateCurrentScene();
+            static void RenderCurrentScene();
             
            
     };

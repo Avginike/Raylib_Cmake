@@ -19,5 +19,4 @@ target_link_libraries(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/libs/raylib/lib/libr
 target_link_libraries(${PROJECT_NAME} winmm.lib)
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/libs/raylib/include/)
 
-
 target_compile_definitions(${PROJECT_NAME} PUBLIC ASSETS_PATH="${CMAKE_CURRENT_SOURCE_DIR}/assets/") # Set the asset path macro to the absolute path on the dev machine

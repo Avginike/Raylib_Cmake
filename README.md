@@ -1,1 +1,1 @@
-A sane no-bs default for staticaly linking raylib with cmake
+# A sane no-bs default for staticaly linking raylib with cmake
