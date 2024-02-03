@@ -1,12 +1,14 @@
 #pragma once
 
+#include <raylib.h>
+
 #include <vector>
 #include <cstdint>
 #include <string>
 #include <stack>
 #include <memory>
 
-#include <raylib.h>
+
 
 namespace Game
 {
@@ -14,7 +16,7 @@ namespace Game
     {
         static std::stack<std::unique_ptr<Scene>> SceneStack;
 
-        Color Background = {0,0,0,255};
+        Color Background = {100,100,100,255};
 
         public:
             static bool GameHasToExit;

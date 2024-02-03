@@ -13,7 +13,7 @@ namespace Game
 
     class Button : public UIElement
     {
-        float scale{1};
+        float ButtonScale{1};
         float sizex;
         float sizey;
         
