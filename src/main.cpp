@@ -15,8 +15,8 @@ int main()
     while(!ShouldWindowClose)    // Detect window close button or ESC key
     {
         ShouldWindowClose = WindowShouldClose();
-
         
+
     
 
 
