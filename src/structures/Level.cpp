@@ -48,7 +48,7 @@ namespace Game
     }
     void Level::Render()
     {
-        LevelSizePx = Vector2{Data.size * 8, Data.front().size * 8};
-        int padding = 
+        Vector2 LevelSizePx = Vector2{Data.size() * 8, Data.front().size() * 8};
+        int padding;
     }
 } // namespace Game
